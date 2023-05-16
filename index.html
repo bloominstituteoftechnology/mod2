@@ -23,7 +23,7 @@
     // 🧠 Example of usage:
     // buildPeter() // should return { firstName: "Peter", lastName: "Pan", age: 12 }
     function buildPeter() {
-
+           return { firstName: "Peter", lastName: "Pan", age: 12}
     }
 
     // 👉 CHALLENGE 2
@@ -31,8 +31,12 @@
     // 🧠 Example of usage:
     // buildUser("John", "Smith", 30) // should return { firstName: "John", lastName: "Smith", age: 30 }
     function buildUser(firstName, lastName, age) {
-
-    }
+      let result = {}
+      result.firstName = firstName
+      result.lastName = lastName
+      result.age = age
+      return result 
+       }
 
     // 👉 CHALLENGE 3
     // 🧠 The function deletePrice takes an object as its argument and deletes its "price" property if it exists.
@@ -42,7 +46,7 @@
     // 🧠 Examples of usage:
     // deletePrice({ item: "Tesla Model 3", price: 40000 }) // should return { item: "Tesla Model 3" }
     // deletePrice({ item: "Kobo Libra 2" }) // should return { item: "Kobo Libra 2", priceless: true }
-    function deletePrice() {
+    function deletePrice(item) {
 
     }
 
